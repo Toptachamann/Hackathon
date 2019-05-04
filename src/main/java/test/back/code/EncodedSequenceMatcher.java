@@ -114,7 +114,7 @@ public class EncodedSequenceMatcher {
         int x;
         do {
             x = longestCommonSubsequence(first, second);
-            if (x < 5) {
+            if (x < 15) {
                 break;
             }
             int finish2 = start2 + x;

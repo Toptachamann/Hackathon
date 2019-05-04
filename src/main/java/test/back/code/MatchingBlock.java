@@ -1,8 +1,8 @@
 package test.back.code;
 
 public class MatchingBlock {
-    String original;
-    String plag;
+    public String original;
+    public String plag;
 
 
     public MatchingBlock(String original, String plag) {

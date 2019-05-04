@@ -10,6 +10,7 @@
 <%--<input type="file" id="input1">--%>
 <input type="file" id="input2" multiple/>
 <button id="sendbtn">Send</button>
+<%--<div id = "div0">--%>
 <div id = "div1">
     <div id = "div2">
 
@@ -88,48 +89,62 @@
         }),
         dataType : "json",
         contentType: "application/json;charset=UTF-8",
-        success : (response) => {
-            console.log(response);
-            // let resp = JSON.parse(response);
-            // console.log(resp);
-            // resp.orig
+            success : (response) => {
+                console.log(response);
+                var divMsg1 = document.getElementById("div1");
+                var size = response.test.length;
+                var res = JSON.stringify(response.test[0]).split('",');
+                var plag = JSON.stringify(response.plag[0]).split('",');
+                console.log(response.coef);
+                var coef = JSON.stringify(response.coef[0]).split(',');
+                // var ttmp = response.coef[0][1];
+                // console.log(ttmp);
+                // JSON.
+                // var coeff = response.coef;
 
-            // let powerThree = JSON.stringify(resp.powerThree);
-            // let once = JSON.stringify(resp.once);
-            // let primes = JSON.stringify(resp.primes);
-            // let text = "Lab1.Remove numbers that appears once : <br/>" + once + " . <br/>" +
-            //     "Lab2.Remove numbers which positions are power of 3 : <br/>" + powerThree.toString() + " . <br/>" +
-            //     "Lab3.Divide list on lists of primes size: <br/>" + primes.toString() + " . <br/>";
-            var divMsg1 = document.getElementById("div1");
-            var size = response.test.length;
-            var res = JSON.stringify(response.test[0]).split(',');
-            // res[0] = res[0].slice(1);
-            // res[res.length-1] = res[res.length-1].slice(-1);
-            for (var i = 0; i < res.length; ++i) {
-                var tmp = res[i];
-                var tmp2 = "";
-                var x = 1;
-                var y = 1;
-                if (i == 0) x = 2;
-                if (i + 1 == res.length) y = 2;
-                for (var j = x; j + y < tmp.length; ++j) {
-                    tmp2 += tmp[j];
+                var divMsg0 = document.getElementById("div0");
+                // divMsg1.innerHTML += "<center> <h1> " + JSON.stringify(response.coef[0]) + "</h1></center>";
+                // divMsg0.innerHTML += "<h1>" + coeff + "</h1>";
+
+                var k = 0;
+                for (var i = 0; i < res.length; ++i) {
+
+                    var tmp = res[i];
+                    var tmp2 = "";
+                    var tmpPlag = plag[i];
+                    var tmpP = "";
+                    var x = 1;
+                    var y = 0;
+                    if (i == 0) x = 2;
+                    if (i + 1 == res.length) y = 1;
+                    for (var j = x; j + y < tmp.length; ++j) {
+                        tmp2 += tmp[j];
+                    }
+                    for (var j = x; j + y < tmpPlag.length; ++j) {
+                        tmpP += tmpPlag[j];
+                    }
+
+
+                    if (tmp2 == "lol" && tmpP == "kek" || i + 1 == res.length) {
+                        divMsg1.innerHTML += "<center> <h1> " + response.coef[0][k] + "</h1></center>";
+                        ++k;
+                        divMsg1.innerHTML += "<p><h2>------------------------------------------</h2></p>";
+                    } else {
+                        divMsg1.innerHTML += "<p style=\"color:green\">" + tmp2 + "</p>";
+                        divMsg1.innerHTML += "<p style=\"color:red\">" + tmpP + "</p>";
+                        divMsg1.innerHTML += "<p>----------------------------------------</p>";
+                    }
+
+                    // console.log(response.test[i]);
                 }
-                // tmp = res[i].slice(1, tmp.length - 1);
-                // console.log(tmp);
-                // tmp.slice(1, 2);
-                // console.log(tmp);
-                divMsg1.innerHTML += "<p style=\"color:red\">" + tmp2 + "</p>";
-                // console.log(response.test[i]);
+                // divMsg1.innerHTML = JSON.stringify(response.test).toString();
+
+
+            },
+            error : (error) => {
+                console.log(error)
             }
-            // divMsg1.innerHTML = JSON.stringify(response.test).toString();
-
-
-        },
-        error : (error) => {
-            console.log(error)
-        }
-    })
+        })
     });
 </script>
 </body>

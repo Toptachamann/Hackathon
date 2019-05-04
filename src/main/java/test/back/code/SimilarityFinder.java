@@ -9,7 +9,6 @@ import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.CharStreams;
 import org.antlr.v4.runtime.Lexer;
 import org.antlr.v4.runtime.Token;
-import org.apache.commons.text.similarity.CosineDistance;
 
 import java.io.File;
 import java.io.FileNotFoundException;

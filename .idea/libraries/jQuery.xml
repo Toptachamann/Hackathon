@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="jQuery" type="javaScript">
+    <properties>
+      <option name="frameworkName" value="jQuery" />
+      <option name="frameworkVersion" value="" />
+    </properties>
+    <CLASSES>
+      <root url="file://$USER_HOME$/Downloads/Telegram Desktop/http_code.jquery.com_jquery-2.0.0.js" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

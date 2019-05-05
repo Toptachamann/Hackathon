@@ -1,34 +1,15 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>Anti plagiarism</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
-<body>
 
 <input type="file" id="input1">
-<%--<input type="file" id="input1">--%>
 <input type="file" id="input2" multiple/>
 <button id="sendbtn">Send</button>
-<%--<div id = "div0">--%>
-<div id = "div1">
-    <div id = "div2">
-
-</div>
-<%--<script type="text/javascript">--%>
-    <%--function getfolder(e) {--%>
-        <%--var files = e.target.files;--%>
-        <%--for (var i = 0; i < files.length; ++i) {--%>
-            <%--// console.log(files[i].name);--%>
-            <%--console.log(files[i].webkitRelativePath);--%>
-        <%--}--%>
-        <%--var path = files[0].webkitRelativePath;--%>
-        <%--var Folder = path.split("/");--%>
-        <%--alert(Folder[0]);--%>
-    <%--}--%>
-<%--</script>--%>
-
-<%--<input type="file" id="flup" onchange="getfolder(event)" webkitdirectory mozdirectory msdirectory odirectory directory multiple />--%>
+<div id = "div1"/>
+<div id = "div2"/>
 
 <script>
 
@@ -61,18 +42,14 @@
             reader.push(tmp);
             reader[i].readAsText(selectedFile[i],'UTF-8');
             fileNames.push(selectedFile[i].name);
-            // console.log(fileNames[i]);
             reader[i].onload = (function(j) {
 
                 return function (ev) {
-                    // console.log(j);
                     fileContentMult.push(ev.target.result); // this is the content!
-                    // console.log(fileNames[j])
                     fileExtensionMult.push(fileNames[j].split('.').pop());
                 }
             })(i);
         }
-
     }
 
     $("#sendbtn").click( () => {
@@ -95,16 +72,9 @@
                 var size = response.test.length;
                 var res = JSON.stringify(response.test[0]).split('",');
                 var plag = JSON.stringify(response.plag[0]).split('",');
-                console.log(response.coef);
                 var coef = JSON.stringify(response.coef[0]).split(',');
-                // var ttmp = response.coef[0][1];
-                // console.log(ttmp);
-                // JSON.
-                // var coeff = response.coef;
 
                 var divMsg0 = document.getElementById("div0");
-                // divMsg1.innerHTML += "<center> <h1> " + JSON.stringify(response.coef[0]) + "</h1></center>";
-                // divMsg0.innerHTML += "<h1>" + coeff + "</h1>";
 
                 var k = 0;
                 for (var i = 0; i < res.length; ++i) {
@@ -134,12 +104,7 @@
                         divMsg1.innerHTML += "<p style=\"color:red\">" + tmpP + "</p>";
                         divMsg1.innerHTML += "<p>----------------------------------------</p>";
                     }
-
-                    // console.log(response.test[i]);
                 }
-                // divMsg1.innerHTML = JSON.stringify(response.test).toString();
-
-
             },
             error : (error) => {
                 console.log(error)

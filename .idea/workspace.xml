@@ -7,10 +7,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b937126-4906-451d-af75-95793b968f2a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/back/code/EncodedSequenceMatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/back/code/EncodedSequenceMatcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/back/code/MatchingBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/back/code/MatchingBlock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/back/code/SimilarityFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/back/code/SimilarityFinder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/back/controller/RestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/back/controller/RestController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/paradigm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/paradigm.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -60,10 +56,9 @@
       <file leaf-file-name="paradigm.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/paradigm.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="128" column="82" selection-start-line="128" selection-start-column="82" selection-end-line="128" selection-end-column="82" />
+            <state relative-caret-position="100">
+              <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
               <folding>
-                <element signature="n#head#0;n#html#0;n#!!top" />
                 <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
               </folding>
@@ -592,12 +587,12 @@
       <workItem from="1556743263599" duration="5291000" />
       <workItem from="1556748675575" duration="4972000" />
       <workItem from="1556783970989" duration="1630000" />
-      <workItem from="1556955013394" duration="24556000" />
+      <workItem from="1556955013394" duration="26265000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80928000" />
+    <option name="totallyTimeSpent" value="82637000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -624,9 +619,9 @@
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49932885" visible="true" weight="0.46866098" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932885" weight="0.5982906" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.32905984" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.15242165" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.33048433" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21879195" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -1040,10 +1035,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/paradigm.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="128" column="82" selection-start-line="128" selection-start-column="82" selection-end-line="128" selection-end-column="82" />
+        <state relative-caret-position="100">
+          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
           <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
           </folding>
